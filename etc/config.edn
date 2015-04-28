@@ -1,0 +1,8 @@
+{:auth "<ghuser>:<ghpass>"
+ ;; Who owns the repo
+ :gh-owner "elastic"
+ ;; Name of the repository
+ :gh-repo "elasticsearch"
+ ;; Team members
+ :gh-team ["dakrone" "areek" "imotov" "jdconrad"
+           "mikemccand" "nknize" "rmuir" "rjernst"]}
