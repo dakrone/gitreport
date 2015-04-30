@@ -8,4 +8,8 @@
  :gh-repo "elasticsearch"
  ;; Team members
  :gh-team ["dakrone" "imotov" "jdconrad" "mikemccand"
-           "nknize" "rmuir" "rjernst"]}
+           "nknize" "rmuir" "rjernst"]
+ :table-format doric.core/org
+ :doric-headers [{:name :assignee :title "Assignee"}
+                 {:name :html_url :title "URL" :format gitreport.table/format-url-org}
+                 {:name :title :title "Title" :width 70 :ellipsis true}]}
