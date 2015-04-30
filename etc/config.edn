@@ -1,8 +1,11 @@
-{:auth "<ghuser>:<ghpass>"
+{;; authorization can be specified either in config or in a file
+ :auth "<ghuser>:<ghpass>"
+ ;; file takes precedence, format is the same as :auth
+ :auth-file "/Users/hinmanm/.gitreport"
  ;; Who owns the repo
  :gh-owner "elastic"
  ;; Name of the repository
  :gh-repo "elasticsearch"
  ;; Team members
- :gh-team ["dakrone" "areek" "imotov" "jdconrad"
-           "mikemccand" "nknize" "rmuir" "rjernst"]}
+ :gh-team ["dakrone" "imotov" "jdconrad" "mikemccand"
+           "nknize" "rmuir" "rjernst"]}

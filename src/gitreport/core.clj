@@ -6,6 +6,7 @@
             [tentacles.users :as users]
             [tentacles.repos :as repos]
             [tentacles.issues :as issues])
+  (:import (java.io FileNotFoundException))
   (:gen-class))
 
 (def debug false)
@@ -52,5 +53,15 @@
        (filter (partial assigned? (config :gh-team)))
        (sort-by :assignee)))
 
-(defn -main [& [creds action filename repouser reponame]]
-  (println "Hello World"))
+(defn load-credentials! []
+  (try (.trim (slurp (config :auth-file)))
+       (catch FileNotFoundException e
+         (config :auth))))
+
+;; cached version
+(def load-credentials (memoize load-credentials!))
+
+(defn -main []
+  (println (-> (load-credentials)
+               (formatted-issues)
+               (tablify-issues))))
