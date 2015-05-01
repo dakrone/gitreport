@@ -15,8 +15,6 @@
 #+TAGS: export(e) noexport(n)
 #+STARTUP: fold nodlcheck lognotestate content
 
-* Git reports
-
 Yep.
 
 * Usage
@@ -29,3 +27,14 @@ Then:
 #+BEGIN_SRC sh
 lein run
 #+END_SRC
+
+Output looks like:
+
+|------------+--------------+------------------------------------------------------------------------|
+| Assignee   | URL          | Title                                                                  |
+|------------+--------------+------------------------------------------------------------------------|
+| dakrone    | [[https://github.com/elastic/elasticsearch/issues/10469][issues/10469]] | allow relocating primary shards on shared filesystems without faili... |
+| dakrone    | [[https://github.com/elastic/elasticsearch/issues/9978][issues/9978]]  | Remove lowercase_expanded_terms option                                 |
+| dakrone    | [[https://github.com/elastic/elasticsearch/issues/9966][issues/9966]]  | Add another test for reading a truncated translog                      |
+
+etc
