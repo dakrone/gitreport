@@ -18,3 +18,14 @@
 * Git reports
 
 Yep.
+
+* Usage
+
+Put your credentials either in =etc/config.edn= or point the =:auth-file=
+setting to where you want to put them.
+
+Then:
+
+#+BEGIN_SRC sh
+lein run
+#+END_SRC
