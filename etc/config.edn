@@ -1,7 +1,7 @@
 {;; authorization can be specified either in config or in a file
  :auth "<ghuser>:<ghpass>"
  ;; file takes precedence, format is the same as :auth
- :auth-file "/Users/hinmanm/.gitreport"
+ :auth-file "/home/hinmanm/.gitreport"
  ;; Who owns the repo
  :gh-owner "elastic"
  ;; Name of the repository
